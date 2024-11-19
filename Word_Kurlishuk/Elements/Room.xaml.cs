@@ -31,7 +31,7 @@ namespace Word_Kurlishuk.Elements
         public void LoadOwner(int Room)
         {
             List<OwnerContext> roomOwners = OwnerContext.AllOwners().FindAll(x => x.NumberRoom == Room);
-            foreach (var roomOwner in roomOwners) parent.Children.Add(new Elements.Owner(roomOwner));
+            foreach (var roomOwner in roomOwners) parent.Children.Add(new Elements.Owner(roomOwner)); 
         }
     }
 }
